@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-let flag = 'UDCTF{l1t3ra11y_g3t_r3cked!}';
+let flag = 'UDCTF{l1t3ra11y_g3t_recked!}';
 
 app.use(express.static('public'));
 
