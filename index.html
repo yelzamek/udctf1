@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UD CTF Challenge</title>
+  </head>
+  <body>
+    <h1>UD CTF Challenge</h1>
+    <p>Submit your payload:</p>
+    <form>
+      <input type="text" id="input" value="">
+      <button id="submit">Submit</button>
+    </form>
+    <div>
+      <p>Your input: <span id="output"></span></p>
+    </div>
+
+    <script>
+      document.getElementById('submit').addEventListener('click', () => {
+        const input = document.getElementById('input').value;
+        const output = document.getElementById('output');
+        output.innerHTML = input;
+      });
+    </script>
+  </body>
+</html>
